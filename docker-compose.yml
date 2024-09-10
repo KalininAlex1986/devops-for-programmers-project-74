@@ -1,0 +1,12 @@
+# version: '3'  ---obsolete
+services:
+   app:
+        image: devops-for-programmers-project-74
+        build:
+              context: .
+              dockerfile: Dockerfile
+        command: npm test   
+        #ports:
+             #- "3000:8000"
+        volumes:
+             - "./app:/app/"
