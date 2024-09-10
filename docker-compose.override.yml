@@ -5,8 +5,8 @@ services:
         build:
               context: .
               dockerfile: Dockerfile
-        command: make test   
-        #ports:
-             #- "3000:8000"
+        command: make dev   
+        ports:
+             - "8080:8080"
         volumes:
              - "./app:/app/"
